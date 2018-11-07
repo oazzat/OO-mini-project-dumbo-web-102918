@@ -11,6 +11,7 @@ end
     @ingredient = ingredient
     @recipe = recipe
     @@all << self
+    recipe.ingredients << ingredient unless recipe.ingredients.include?(ingredient)
   end
 
 
